@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="welcome_to_the_quiz_app">Welcome to the Quiz App</string>
+    <string name="answer_all_questions">Answer all questions to test your basic Java programming concepts:</string>
+    <string name="question_1">1. This keyword is used for a method that does not return any value</string>
+    <string name="question_2">2. Select all access modifiers below:</string>
+    <string name="rd_void">void</string>
+    <string name="rd_static">static</string>
+    <string name="rd_int">int</string>
+    <string name="rd_public">public</string>
+    <string name="chk_protected">protected</string>
+    <string name="chk_string">String</string>
+    <string name="chk_public">public</string>
+    <string name="chk_private">private</string>
+    <string name="hint_answer_here">Enter your answer here</string>
+    <string name="question_3">3. Which annotation is used to override a method from an inherited parent class?</string>
+    <string name="question_4">4. Declare an integer variable named \'x\' and initialize its value to 3</string>
+    <string name="submit">Submit</string>
+    <string name="question_5">5. Consider the following code segment:  \nint x = 5; \nString y = \'\'1234\'\';  \nString z; \nWhat is the value of \'z\' if z = x + y?</string>
+    <string name="here_are_your_quiz_results">Here are your Quiz Results:</string>
+</resources>

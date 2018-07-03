@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/welcome_to_the_quiz_app"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/answer_all_questions"
+        android:textSize="@dimen/text_15sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_18sp"
+                android:text="@string/question_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdVoid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioSelected"
+                    android:text="@string/rd_void" />
+
+                <RadioButton
+                    android:id="@+id/rdStatic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioSelected"
+                    android:text="@string/rd_static" />
+
+                <RadioButton
+                    android:id="@+id/rdInt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioSelected"
+                    android:text="@string/rd_int" />
+
+                <RadioButton
+                    android:id="@+id/rdPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioSelected"
+                    android:text="@string/rd_public" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_18sp"
+                android:text="@string/question_2"/>
+
+            <CheckBox
+                android:id="@+id/chkProtected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chk_protected"/>
+            <CheckBox
+                android:id="@+id/chkString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chk_string"/>
+            <CheckBox
+                android:id="@+id/chkPublic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chk_public"/>
+            <CheckBox
+                android:id="@+id/chkPrivate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chk_private"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_18sp"
+                android:text="@string/question_3"/>
+
+            <EditText
+                android:id="@+id/etQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_answer_here"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_18sp"
+                android:text="@string/question_4"/>
+
+            <EditText
+                android:id="@+id/etQuestion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_answer_here" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_18sp"
+                android:text="@string/question_5"/>
+
+            <EditText
+                android:id="@+id/etQuestion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_answer_here"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/submit"
+                android:onClick="onClickSubmit"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
